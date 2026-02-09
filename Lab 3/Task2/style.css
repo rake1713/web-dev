@@ -1,0 +1,89 @@
+header{
+    background-color: rgb(34,34,34);
+    color: rgb(138,139,144);
+    width: 100%;
+    font-family: sans-serif;
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding-left: 70px;
+    font-size: 15px;
+}
+.container{
+    font-family: sans-serif;
+    width: 70%;
+    margin: 110px auto;
+    text-align: center;
+}
+.container h2{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+input[type="text"]{
+    width: 70%;
+    height: 35px;
+    padding-left:10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+#add-btn{
+    margin-left: 20px;
+    height: 40px;
+    width: 60px;
+    background-color: rgb(12, 90, 164);
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+#add-btn:hover{
+    cursor: pointer;
+    background-color: #056e0f;
+}
+#all-tasks{
+    width: 90%;
+    margin: 50px auto;
+    list-style-type: none;
+    font-size: 18px;
+    padding-left: 0px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-radius: 3px;
+}
+#all-tasks li{
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+#all-tasks label{
+    padding-left: 10px;
+}
+.del-btn {
+    background: none;
+    border: none;
+    color: #ff4d4d; 
+    cursor: pointer;
+    font-size: 19px;
+    float: right;
+}
+
+.del-btn:hover {
+    color: #670000;
+}
+.del-btn i {
+    pointer-events: none;
+}
+input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+.complete label {
+    text-decoration: line-through;
+
+}
+.not-complete {
+    text-decoration: none;
+}
