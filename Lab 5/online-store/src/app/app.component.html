@@ -1,0 +1,30 @@
+
+<div class="container">
+  <img class="logo" src="store.gif" alt="Online Store">
+  <h1 class="header">Online Store by Ramazan</h1>
+  </div>
+  <div class="container-bottom">
+  <nav class="category-nav">
+    @for (cat of categories; track cat.id) {
+      <button 
+        (click)="selectCategory(cat.id)" 
+        [class.active]="selectedCategoryId === cat.id">
+        {{ cat.name }}
+      </button>
+    }
+  </nav>
+
+  <main>
+    @if (selectedCategoryId) {
+      <app-product-list 
+        [products]="getFilteredProducts()" 
+        (removeProduct)="onProductDeleted($event)"> 
+    </app-product-list>
+    } @else {
+      <div class="welcome">
+        <h2>Добро пожаловать в наш магазин!</h2>
+        <p>Выберите категорию выше, чтобы начать покупки.</p>
+      </div>
+    }
+  </main>
+</div>
