@@ -1,0 +1,18 @@
+.album-item { 
+  display: flex; 
+  justify-content: space-between; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-bottom: 5px; 
+  cursor: pointer;
+}
+.album-item:hover { 
+    background-color: #f0f0f0; 
+}
+button { 
+    background: red; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+}
