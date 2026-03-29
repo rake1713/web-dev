@@ -6,7 +6,7 @@
 
 ## 🛠️ STACK
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,angular,django,github,vscode" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,angular,django,github,vscode,postman" />
 </p>
 
 
